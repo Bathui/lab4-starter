@@ -28,6 +28,13 @@ function discountPrices(prices, discount) {
     const discounted = []
     const length = prices.length;
     let discountedPrice = 0
+    
+    if (prices.length === 0) {
+        return false;
+    }
+    if (typeof discount !== 'number'|| !Array.isArray(prices)) {
+        return false;
+    }
     for(let i = 0; i < length; i++) {
         discountedPrice = prices[i] * (1 - discount);
         discounted.push(discountedPrice);
