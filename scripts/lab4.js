@@ -36,4 +36,4 @@ function discountPrices(prices, discount) {
     return discounted;
 }
 
-module.exports = {sumValues, discountPrices};
+module.exports = { sumValues, discountPrices};
